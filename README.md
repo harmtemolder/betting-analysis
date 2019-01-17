@@ -1,0 +1,2 @@
+## Betfair
+* Get yourself an application key [here](https://docs.developer.betfair.com/display/1smk3cen4v3lu3yomq5qye0ni/Application+Keys#ApplicationKeys-HowtoCreateAnApplicationKey) (the "1.0-DELAY" version is fine)

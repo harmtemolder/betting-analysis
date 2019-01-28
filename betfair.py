@@ -1,9 +1,8 @@
 from datetime import datetime
 import json
 
+import pickle
 import requests
-
-# TODO Move the request.posts to their own function instead of copies
 
 
 def login(api_key, username, password):
@@ -178,7 +177,11 @@ if __name__ == '__main__':
             session_token=session_token,
             events=events)
 
-        print('Betfair: Retreived all information. Now what?')
+        filehandler = open('betfair-{}.pkl'.format(
+            datetime.now().strftime('%Y%m%d')), 'wb')
+        pickle.dump(events_with_odds, filehandler)
+
+        print('Betfair: Retreived and saved all information. Now what?')
 
     except Exception as e:
         print('Betfair: ' + e.__class__.__name__ + ' - ' + str(e))

@@ -1,7 +1,15 @@
-# Secret and private files
-PRIVATE-*
-SECRET-*
+# Mac
+.DS_Store
+
+# PyCharm
 .idea/
+
+# Secret and private files
+SECRET-*
+PRIVATE-*
+
+# Assets of saved HTML pages
+*_files
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
